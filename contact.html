@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8V631TSF2E"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-8V631TSF2E');
+    </script>
+        <meta charset="utf-8">
+        <title>Contact Us</title>
+        <style>
+            body{
+                background-image: url(images/wood-background.png);
+            }
+        </style>
+        <link rel="stylesheet" href="https://use.typekit.net/ppw0bfy.css">
+        <link type="text/css" rel="stylesheet" href="css/style.css">
+    </head>
+    <nav class="nav">
+        <ul>
+            <li> <a href="menu.html">Drinks & Food&nbsp</a></li>
+            <li> <a href="about.html">Our Story&nbsp</a></li>
+            <li> <a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <body> 
+        <form class="contact-form" id="class-form" name="test_form" method="" action="form.php" onsubmit="return validateForm(this)">
+            <div class="first-name">
+                <label for="firstname" class="label_input_wrap">First Name:</label>
+                <input type="text" name="firstname" id="firstname" placeholder="First Name"/>
+            </div>
+
+            <div class="last-name">
+                <label for="lastname" class="label_input_wrap">Last Name:</label>
+                <input type="text" name="lastname" id="lastname" placeholder="Last Name" />
+            </div>
+
+            <div class="email">
+                <label for="email" class="label_input_wrap">Email:</label>
+                <input type="email" name="email" id="email" placeholder="johndoe@email.com"/>
+            </div>
+
+            <div class="telephone">
+                <label for="telephone" class="label_input_wrap">Telephone:</label>
+                <input type="tel" name="telephone" id="telephone" placeholder="(222) 222-2222"/>
+            </div>
+
+            <div class="comments">
+                <label for="comments" class="label_input_wrap">Comments:</label>
+                <textarea name="comments" id="comments" cols="55" rows="15" placeholder="Your Comment Goes Here"></textarea>
+            </div>
+
+            <div class="checkbox">
+                <h3>Favorite Style of Beer</h3>
+                <input type="checkbox" name="beer" value="IPA" id="beer"/><label for="ipa">IPA</label>
+                <input type="checkbox" name="beer" value="Lager" id="beer"/><label for="lager">Lager</label>
+                <input type="checkbox" name="beer" value="Sour" id="beer"/><label for="sour">Sour</label>
+                <input type="checkbox" name="beer" value="Stout" id="beer"/><label for="stout">Stout</label>
+            </div>
+
+            <div class="submit">
+                <input type="submit" value="Send me a message!"/>
+            </div>
+        </form>
+    </body>
